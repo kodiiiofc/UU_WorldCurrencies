@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Валюты мира</string>
+    <string name="text_currency">Купюра</string>
+    <string name="currency_name">Название валюты</string>
 </resources>
