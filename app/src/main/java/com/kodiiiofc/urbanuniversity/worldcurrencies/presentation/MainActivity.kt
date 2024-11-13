@@ -1,5 +1,6 @@
 package com.kodiiiofc.urbanuniversity.worldcurrencies.presentation
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
@@ -41,6 +42,7 @@ class MainActivity : AppCompatActivity() {
         return super.onOptionsItemSelected(item)
     }
 
+    @SuppressLint("InternalInsetResource")
     private fun setStatusBarHeight() {
         val statusBarHeight = resources.getIdentifier("status_bar_height", "dimen", "android")
         binding.statusBar.layoutParams.height = resources.getDimensionPixelSize(statusBarHeight)
