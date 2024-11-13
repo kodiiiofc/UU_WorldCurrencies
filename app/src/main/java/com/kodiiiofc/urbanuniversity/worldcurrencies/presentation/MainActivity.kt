@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         val adapter = CurrencyRecyclerViewAdapter()
-        binding.recyclerView.adapter = adapter
+//        binding.recyclerView.adapter = adapter
 
     }
 }

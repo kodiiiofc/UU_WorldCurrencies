@@ -1,11 +1,13 @@
 package com.kodiiiofc.urbanuniversity.worldcurrencies.presentation
 
+import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.kodiiiofc.urbanuniversity.worldcurrencies.R
+import com.kodiiiofc.urbanuniversity.worldcurrencies.domain.CurrencyModel
 
 class CurrencyRecyclerViewAdapter : RecyclerView.Adapter<CurrencyRecyclerViewAdapter.ViewHolder>() {
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
@@ -13,15 +15,25 @@ class CurrencyRecyclerViewAdapter : RecyclerView.Adapter<CurrencyRecyclerViewAda
         val imageIV: ImageView = itemView.findViewById(R.id.image_iv)
     }
 
+    private var currencyList = listOf<CurrencyModel>()
+
+    fun updateCurrencyList(list: List<CurrencyModel>) {
+        currencyList = list
+    }
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        TODO("Not yet implemented")
+        return ViewHolder(
+            LayoutInflater.from(parent.context).inflate(R.layout.list_item, parent, false)
+        )
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        TODO("Not yet implemented")
+        val currency = currencyList[position]
+        holder.nameTV.text = currency.name
+        holder.imageIV.setImageResource(currency.imageResource)
     }
 
     override fun getItemCount(): Int {
-        TODO("Not yet implemented")
+        return currencyList.size
     }
 }
