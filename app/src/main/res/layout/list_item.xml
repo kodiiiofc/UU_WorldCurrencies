@@ -11,7 +11,7 @@
         android:id="@+id/image_iv"
         android:contentDescription="@string/text_currency"
         android:src="@mipmap/ic_launcher"
-        android:scaleType="centerCrop"/>
+        android:scaleType="centerInside"/>
 
     <TextView
         android:id="@+id/name_tv"

@@ -1,7 +1,6 @@
 package com.kodiiiofc.urbanuniversity.worldcurrencies.di
 
 import com.kodiiiofc.urbanuniversity.worldcurrencies.data.CurrencyRepositoryImplementation
-import com.kodiiiofc.urbanuniversity.worldcurrencies.domain.CurrencyModel
 import com.kodiiiofc.urbanuniversity.worldcurrencies.domain.CurrencyRepository
 import dagger.Module
 import dagger.Provides

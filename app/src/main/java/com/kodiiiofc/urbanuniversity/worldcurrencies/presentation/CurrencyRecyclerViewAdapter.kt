@@ -1,5 +1,6 @@
 package com.kodiiiofc.urbanuniversity.worldcurrencies.presentation
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -17,8 +18,10 @@ class CurrencyRecyclerViewAdapter : RecyclerView.Adapter<CurrencyRecyclerViewAda
 
     private var currencyList = listOf<CurrencyModel>()
 
+    @SuppressLint("NotifyDataSetChanged")
     fun updateCurrencyList(list: List<CurrencyModel>) {
         currencyList = list
+        notifyDataSetChanged()
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {

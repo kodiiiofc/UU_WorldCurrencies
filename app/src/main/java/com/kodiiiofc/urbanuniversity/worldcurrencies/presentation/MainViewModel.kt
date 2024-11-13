@@ -1,5 +1,6 @@
 package com.kodiiiofc.urbanuniversity.worldcurrencies.presentation
 
+import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.kodiiiofc.urbanuniversity.worldcurrencies.domain.CurrencyModel
@@ -14,4 +15,5 @@ class MainViewModel @Inject constructor(private val currencyRepository: Currency
         value = currencyRepository.getCurrencyList()
     }
 
+    val currencyListLiveData : LiveData<List<CurrencyModel>> = mutableCurrencyListLiveData
 }
