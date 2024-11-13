@@ -1,4 +1,4 @@
-package com.kodiiiofc.urbanuniversity.worldcurrencies
+package com.kodiiiofc.urbanuniversity.worldcurrencies.presentation
 
 import androidx.lifecycle.ViewModel
 import dagger.hilt.android.lifecycle.HiltViewModel

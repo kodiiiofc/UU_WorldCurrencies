@@ -1,4 +1,4 @@
-package com.kodiiiofc.urbanuniversity.worldcurrencies
+package com.kodiiiofc.urbanuniversity.worldcurrencies.presentation
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -14,6 +14,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        val adapter = CurrencyRecyclerViewAdapter()
+        binding.recyclerView.adapter = adapter
 
     }
 }

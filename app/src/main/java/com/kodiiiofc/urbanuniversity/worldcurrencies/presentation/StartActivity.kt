@@ -1,4 +1,4 @@
-package com.kodiiiofc.urbanuniversity.worldcurrencies
+package com.kodiiiofc.urbanuniversity.worldcurrencies.presentation
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
